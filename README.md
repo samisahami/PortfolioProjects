@@ -150,5 +150,5 @@ The HR Analytics Dashboard features **two interactive pages**:
 
 ---
 
-## 🪪 License  
-Open-source project under the **MIT License** — free for educational and portfolio use.
+*This project is for educational and portfolio demonstration purposes only.*
+
