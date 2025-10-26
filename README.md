@@ -133,13 +133,6 @@ The HR Analytics Dashboard features **two interactive pages**:
 
 **Details Page:**  
 ![Details Screenshot](details.png)
----
-
-## 🚀 Future Enhancements  
-- Add predictive attrition modeling  
-- Incorporate trend analysis over time  
-- Automate data refresh using live HRIS connection  
-- Include diversity breakdown by region and job level  
 
 ---
 
@@ -151,4 +144,5 @@ The HR Analytics Dashboard features **two interactive pages**:
 ---
 
 *This project is for educational and portfolio demonstration purposes only.*
+
 
