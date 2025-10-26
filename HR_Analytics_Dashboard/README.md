@@ -1,4 +1,4 @@
-# HR Analytics Dashboard
+# HR Analytics
 
 ## 📋 Overview  
 This interactive Tableau project visualizes workforce analytics such as employee turnover, salary distribution, gender balance, education levels, and performance trends.  
