@@ -11,6 +11,10 @@ This dashboard tracks and visualizes:
 - **Regional Performance Metrics**
 - **Cohort Retention Over Time**
 
+![Overview](Crypto_Growth_Dashboard.png)
+![Insights](Crypto_Growth_Insights_&_Findings.png)
+
+
 ---
 
 ## 🧰 Tools & Tech Stack
