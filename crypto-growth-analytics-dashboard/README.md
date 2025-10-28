@@ -15,7 +15,8 @@ This dashboard tracks and visualizes:
 
 Here’s a glimpse of the Crypto Growth Dashboard:
 
-![Dashboard Overview](Dashboard_Screenshots/Crypto_Growth_Dashboard.png)
+![Dashboard Overview](Crypto_Growth_Dashboard.png)
+
 
 
 
