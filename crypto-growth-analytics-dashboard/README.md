@@ -1,3 +1,6 @@
+This dashboard models crypto exchange user growth, retention, and conversion analytics using SQL, Python, and Power BI.
+
+
 # 🪙 Crypto Exchange Growth Analytics Dashboard
 
 An interactive Power BI dashboard analyzing **user growth, verified conversion, and retention trends** for a simulated crypto exchange platform.
