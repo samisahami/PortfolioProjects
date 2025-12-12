@@ -1,118 +1,124 @@
-# Uniswap Liquidity Analytics
+# Uniswap Liquidity Analytics  
+### End-to-End Data Engineering & Web3 Analytics Project  
+**(SQL • Python • Power BI • On-Chain Data Modeling • L1 → L2 Migration Analysis)**
 
-### End-to-End Data Engineering & BI Project
-
-This project builds a full analytics pipeline around Uniswap’s liquidity data across multiple blockchains (Layer 1 and Layer 2).
-
-It includes:
-
-- SQL data modeling and analytical views
-- Python ETL and data ingestion
-- Power BI dashboard with KPIs, trendlines, and liquidity distribution
-- Business insights on L2 adoption and chain-level performance
-
-This project demonstrates data engineering, analytics engineering, BI visualization, and end-to-end storytelling.
+This project builds a complete analytics pipeline that extracts, models, and visualizes Uniswap’s liquidity trends across multiple blockchains (Ethereum L1 + emerging L2 ecosystems).  
+Data is sourced directly from **DeFiLlama’s public API**, processed into analytical tables, and used to generate a full BI dashboard.
 
 ---
 
-## Project Architecture
+##  Project Overview  
+The goal of this project is to understand:
+
+- How Uniswap’s Total Value Locked (TVL) has evolved from **2018–2025**
+- How liquidity distribution has shifted from **Ethereum (L1) → L2s** like Arbitrum, Base, Polygon, and Optimism
+- How market share, dominance, and growth patterns differ across chains
+- How to build an **end-to-end reproducible pipeline** with SQL, Python, and BI tooling
+
+This project demonstrates:
+
+- Data engineering fundamentals  
+- On-chain analytics  
+- ETL design  
+- Feature engineering  
+- Visualization and insight generation  
+
+---
+
+## 📁 Repository Structure
+
 
 Uniswap_Liquidity_Analytics/
+│
 ├── sql/
-│   ├── 01_data_exploration.sql
-│   ├── 02_summary_tables.sql
-│   ├── 03_l2_share_summary.sql
-│   ├── 04_chain_share_summary.sql
-│   └── 05_unified_dashboard_view.sql
+│ ├── 01_data_exploration.sql
+│ ├── 02_summary_tables.sql
+│ ├── 03_l2_share_summary.sql
+│ ├── 04_chain_share_summary.sql
+│ └── 05_unified_dashboard_view.sql
+│
 ├── python/
-│   └── 01_uniswap_etl.py
+│ └── 01_uniswap_analytics.ipynb # Full end-to-end analysis notebook
+│
 ├── dashboard/
-│   └── Uniswap_Liquidity_Dashboard.pbix
-├── Web3 Unified Analytics.ipynb
+│ └── Uniswap_Liquidity_Dashboard.pbix # Power BI dashboard
+│
 └── README.md
 
----
-
-## Dashboard Overview (Power BI)
-
-The Power BI dashboard provides:
-
-### KPI Cards
-- Total Liquidity (TVL)
-- L2 Share (%)
-- Latest chain-level values
-- Most recent liquidity movement (up or down)
-
-### Visuals
-- L2 Adoption Over Time – line chart
-- Top Chains by TVL – bar chart
-- L1 vs L2 Liquidity Split – donut chart
-- Chain Share Over Time – area chart
-- Year-over-Year Liquidity Trends – multi-line chart
-
-These visuals provide both macro and chain-level liquidity insights.
 
 ---
 
-## SQL Components
+## 🔧 Technologies Used
 
-### 1. Data Quality and Exploration
-- Row counts
-- Date validation
-- Unique chains and layers
-- TVL distribution checks
+### **Data Engineering**
+- Python (Pandas, NumPy, Requests, Matplotlib, Plotly)
+- ETL pipeline to pull TVL data from DeFiLlama API
+- Data cleaning, datetime normalization, chain categorization
 
-### 2. Summary Tables
-- Global liquidity totals
-- Layer 1 vs Layer 2 aggregation
-- Top chains
+### **Data Modeling (SQL)**
+- Chain-level summary tables  
+- L2 migration tables  
+- Normalized analytical views for BI tools  
 
-### 3. Analytical Views
-- Daily percentage share by chain
-- Rolling 7-day averages
-- Running totals
-- Chain rankings using window functions
-
-All SQL scripts are modular, documented, and optimized for BI consumption.
+### **Analytics & BI**
+- Power BI dashboard  
+- KPI cards, trendlines, chain comparison visuals  
+- L1 vs L2 split, dominance, and multi-chain usage patterns  
 
 ---
 
-## Python ETL
+##  Key Insights (Summary)
 
-The Python component handles:
+### **1. Global Liquidity Trend**
+- Uniswap TVL grew exponentially during **2020–2021**, peaking above **$10B** during the DeFi boom.  
+- Despite the 2022 downturn, liquidity **stabilized** and remains in the **$4–6B** range through 2024–2025.
 
-- API ingestion or CSV loading
-- Data cleaning
-- Type casting and date normalization
-- Export to SQL Server
-- Logging and QA checks
+### **2. Chain-Level Distribution**
+- **Ethereum** remains the liquidity anchor, holding **70–75%** of Uniswap's total TVL.  
+- **Arbitrum** leads among L2s (~8% of TVL).  
+- **Base** (10%) and **Polygon** (3%) show accelerating adoption.  
+- Smaller chains (e.g., **Unichain**) show niche growth but meaningful ecosystem expansion.
 
-Files:
-- `01_uniswap_etl.py`
-- (Optional) `Web3 Unified Analytics.ipynb`
+### **3. Liquidity Migration (L1 → L2)**
+- Migration accelerated in **mid-2022**, aligning with L2 scaling, lower gas fees, and Uniswap’s multi-chain deployments.  
+- Base and Arbitrum show the fastest upward liquidity trajectories.  
+- Ethereum’s dominance fell from **≈100% (2020) → ≈70% (2025)** — without losing absolute liquidity (new liquidity is flowing into L2s).
 
----
-
-## Skills Demonstrated
-
-- SQL (window functions, modeling, summary tables)
-- Python (ETL, data cleaning, ingestion)
-- Power BI (DAX, KPIs, visual storytelling)
-- Data engineering (pipeline structure, modularization)
-- Analytics engineering (semantic modeling, views)
-
----
-
-## Future Enhancements
-
-- Add on-chain API ingestion
-- Add rolling 30/90-day TVL volatility
-- Create Power BI bookmarks and interactions
-- Deploy SQL views to Azure SQL for cloud analytics
+### **4. Ecosystem Interpretation**
+Uniswap has transitioned into a **multi-chain liquidity hub**, not a single-chain protocol.  
+Key drivers:
+- Lower transaction cost on L2s  
+- Faster confirmations  
+- Cross-chain composability  
+- Sustainable incentives  
 
 ---
 
-## Author
+##  Power BI Dashboard Preview  
+The dashboard provides:
 
-Sam Sahami  
-SQL • Power BI • Data Engineering • Web3 Analytics
+- TVL trends (2018–2025)  
+- Chain-level comparison  
+- L2 growth & dominance  
+- Liquidity migration visualization  
+- KPI cards for peak, troughs, and YoY shifts  
+
+*(Insert screenshot in your repo if you want — optional but recommended.)*
+
+---
+
+##  Python Notebook Capabilities  
+The Jupyter notebook includes:
+
+- Full TVL ingestion & retry-safe API extraction  
+- Cleaning, normalization, type conversion  
+- Chain-level aggregation  
+- L1/L2 classification  
+- Dominance calculations  
+- Forecast models (Linear Regression + Prophet)  
+- Correlation analysis (ETH dominance vs L2 share)  
+- Statistical significance testing (two-sample t-test)
+
+
+
+
