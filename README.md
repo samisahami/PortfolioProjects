@@ -52,4 +52,4 @@ Workforce analytics project analyzing attrition, tenure, and employee trends usi
 
 
 ## Contact
-LinkedIn: https://www.linkedin.com/in/sam-sahami
+[LinkedIn: https://www.linkedin.com/in/sam-sahami](https://www.linkedin.com/in/sam-sahami-88841519b/)
