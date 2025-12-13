@@ -14,7 +14,7 @@ Analysis of liquidity behavior and pool dynamics within the Uniswap ecosystem.
 Focused on TVL trends, liquidity concentration, and on-chain metrics.
 
 **Tools:** SQL, Python, Power BI  
-📁 Folder: `Uniswap_Liquidity_Analytics`
+📁 Folder: [Uniswap_Liquidity_Analytics](./Uniswap_Liquidity_Analytics)
 
 
 
@@ -22,7 +22,7 @@ Focused on TVL trends, liquidity concentration, and on-chain metrics.
 Explores growth metrics and adoption trends across crypto markets using data analysis and visualization.
 
 **Tools:** Python, Pandas, data visualization  
-📁 Folder: `crypto-growth-analytics-dashboard`
+📁 Folder: [crypto-growth-analytics-dashboard](./crypto-growth-analytics-dashboard)
 
 
 
@@ -30,7 +30,7 @@ Explores growth metrics and adoption trends across crypto markets using data ana
 Workforce analytics project analyzing attrition, tenure, and employee trends using a BI dashboard.
 
 **Tools:** Power BI, SQL  
-📁 Folder: `HR_Analytics_Dashboard`
+📁 Folder: [HR_Analytics_Dashboard](./HR_Analytics_Dashboard)
 
 
 
